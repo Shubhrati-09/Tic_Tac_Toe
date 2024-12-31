@@ -1,0 +1,33 @@
+body{
+    background-color: #AC9FBB;
+}
+
+h1{
+    /* border:1px solid black; */
+    font-size:6rem;
+    color:#3f375a;
+    margin:3vmin 0;
+    width:auto;
+    text-align:center;
+    font-family: "Lobster", serif;
+}
+
+.box{
+    /* border: 1px solid black; */
+    display:flex;
+    justify-content: center;
+    padding:15px;
+}
+
+.subbox{
+    /* border: 1px solid black; */
+    font-size: 2rem;
+    width:fit-content;
+    box-shadow: 0 0 1rem rgba(106, 60, 148, 1);
+    border-radius: 1rem;
+    font-family: "PT Serif", serif;
+}
+
+.back{
+    margin:50px 0 0 50px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game_field</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CO+Guides&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Sixtyfour&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 id="heading">Tic-Tac-Toe Game!</h1>
+        <div class="winner_name hide"></div>
+        <div class="container">
+            <div class="scoreBox">
+                <div class="name p1"> Player_1 (X)</div>
+                <div class="score score1">0</div>
+            </div>
+            <div class="gamearea">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <div class="scoreBox">
+                <div class="name p2">Player_2 (O)</div>
+                <div class="score score1">0</div>
+            </div>
+        </div>
+        <div class="options">
+            <button class = "opt_btn" id="new_game">New Game</button>
+            <button class = "opt_btn" id="reset_game">Reset</button>
+        </div>
+    </main>
+    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="80" fill="currentColor" class="back bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+        <path fill = "#7d619d" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+      </svg></a>
+    <script src="script.js"></script>
+</body>
+</html>
+
