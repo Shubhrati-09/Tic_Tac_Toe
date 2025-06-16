@@ -20,7 +20,7 @@ const winPatterns = [
 box_btn.forEach((box) => {
     box.addEventListener("click",() => {
         count++;
-        console.log("Clicked");
+        // console.log("Clicked");
         if(turnX){
             box.innerText = "X";
             turnX = false;
@@ -40,6 +40,7 @@ const checkNoWinner = (cnt,f) => {
     if((cnt == 9 ) && (!f)){
         msg.innerText = `No winner`;
         msg.classList.remove("hide");
+        setTimeout(() => resetGame(),2000);
     }
 };
 
@@ -60,6 +61,7 @@ const displayScore = () =>{
         msg.innerText = `It's a Draw!`;
     }
 };
+
 const winnerFound = (val) =>{
     msg.classList.remove("hide");
     disableAllBox();
@@ -69,6 +71,7 @@ const winnerFound = (val) =>{
     else
     scores[1].innerText++;
     displayScore();
+    setTimeout(() => resetGame(),2000);
 };
 
 const checkWinner = () => {
